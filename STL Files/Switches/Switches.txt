@@ -1,0 +1,1 @@
+Location for STL files of switch caps.  These are added to the top of toggle switches.
