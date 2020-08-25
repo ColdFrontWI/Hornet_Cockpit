@@ -1,1 +1,0 @@
-This is where STL files for knobs for rotating controls (potentiometers, rotary encoders, rotary switches) will go.
