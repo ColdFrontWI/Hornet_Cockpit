@@ -1,5 +1,6 @@
 The core of this home pit dates back well before the Hornet.  It started out as a flexible/modular system on which I
-could easily swap controls between a yoke/civilian throttle quadrant and my t Flight HOTAS at the time.
+could easily swap controls between a yoke/civilian throttle quadrant and my t Flight HOTAS at the time.  It also had
+to easily slide out of the way and fit in a corner of the basement, which this does nicely.
 
 When I got back into flight sims after a multiple-decade hiatus I expected to play mostly XPlane/MSFX (thus the yoke), but then I found
 WarThunder, and racked up several hundred hours and got pretty good.  And then I found DCS and the time sink/spending
