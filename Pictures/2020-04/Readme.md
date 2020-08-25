@@ -1,1 +1,3 @@
-By April I had the two side consoles built...
+# Wow, this is pretty cool!
+
+By April I had the two side consoles built.
