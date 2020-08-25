@@ -17,8 +17,10 @@ There are also a couple of "special" switches that I drew gauging the sizes base
 * Landing / taxi lights
 * Launch bar
 
-Finally, there are a couple that are here because I used toggle switches in my build even though
+A couple are here because I used toggle switches in my build even though
 they are not toggles in the actual hornet:
 * Landing gear (I based this loosely on an [object from ThingiVerse](https://www.thingiverse.com/thing:4405485), but made mine quite a bit smaller.)
 * Arresting hook (Thanks to Larry Pucci on the F18 DIY Home Cockput Facebook group who sent me pictures with dimensions as a starting point.) 
 
+Last thing is the switch guard for the fuel probe.  As DCS pilots know refueling can be a sensitive time, and
+the easier it is to find the control the better!
