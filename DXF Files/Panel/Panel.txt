@@ -1,1 +1,0 @@
-Drawing of the full panel layout drawn in QCAD.  There is a bitmap layer that I used to bring images (from the NATOPS foldout) in, but these will probably not show up in the DXFs.
