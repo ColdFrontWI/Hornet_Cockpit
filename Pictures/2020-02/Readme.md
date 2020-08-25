@@ -1,3 +1,5 @@
+# A bit of history
+
 The core of this home pit dates back well before the Hornet.  It started out as a flexible/modular system on which I
 could easily swap controls between a yoke/civilian throttle quadrant and my t Flight HOTAS at the time.  It also had
 to easily slide out of the way and fit in a corner of the basement, which this does nicely.
