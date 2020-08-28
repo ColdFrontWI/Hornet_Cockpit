@@ -1,15 +1,17 @@
 -----------------------------------------------------------------------------------------
 -- Eric's F/A-18C custom key commands
 -- Insert into default.lua immediately after:
--- join(res.keyCommands,{
+--     join(res.keyCommands,{
+-- File location to default.lua ~\DCSWorld\Mods\aircraft\FA-18C\Input\FA-18C\joystick
+-- Additional categories of controls will be present in the "CUSTOM..." categories
 -----------------------------------------------------------------------------------------
 
--- WARTHOG SPECIAL CONTROLS
+-- WARTHOG THROTTLE SPECIAL CONTROLS
 -- Throttles IDLE/OFF
-{down = iCommandLeftEngineStop,	up = iCommandLeftEngineStart, value_down =  1.0, value_up = 1.0,	name = _('Throttle (Left) - OFF/IDLE'), category = {_('CUSTOM - Warthog')}},
-{down = iCommandRightEngineStop, up = iCommandRightEngineStart, value_down =  1.0, value_up = 1.0,	name = _('Throttle (Right) - OFF/IDLE'), category = {_('CUSTOM - Warthog')}},
+{down = iCommandLeftEngineStop,	up = iCommandLeftEngineStart, value_down =  1.0, value_up = 1.0,	name = _('Throttle (Left) - OFF/IDLE'), category = {_('CUSTOM - Warthog Throttle')}},
+{down = iCommandRightEngineStop, up = iCommandRightEngineStart, value_down =  1.0, value_up = 1.0,	name = _('Throttle (Right) - OFF/IDLE'), category = {_('CUSTOM - Warthog Throttle')}},
 -- Throttle pinky switch for exterior lights
-{down = hotas_commands.THROTTLE_EXTERIOR_LIGTHS, up = hotas_commands.THROTTLE_EXTERIOR_LIGTHS, cockpit_device_id = devices.HOTAS, value_down =  1.0, value_up = 0.0, name = _('Exterior Lights Switch - Toggle'), category = {_('CUSTOM - Warthog')}},
+{down = hotas_commands.THROTTLE_EXTERIOR_LIGTHS, up = hotas_commands.THROTTLE_EXTERIOR_LIGTHS, cockpit_device_id = devices.HOTAS, value_down =  1.0, value_up = 0.0, name = _('Exterior Lights Switch - Toggle'), category = {_('CUSTOM - Warthog Throttle')}},
 
 
 -- LEFT CONSOLE SPECIAL CONTROLS
@@ -46,7 +48,6 @@
 {down = tgp_commands.LtdrArm_EXT, up = tgp_commands.LtdrArm_EXT, cockpit_device_id = devices.TGP_INTERFACE, value_down = 1.0, value_up = -1.0, name = _('LTD/R Switch - Toggle'), category = {_('CUSTOM - Right Console'), }},
 -- {down = tgp_commands.Ltdr, up = tgp_commands.Ltdr, cockpit_device_id = devices.TGP_INTERFACE, value_down = -1.0, value_up = 0.0, name = _('LTD/R Switch - Toggle AFT/SAFE'), category = {_('CUSTOM - Right Console')}},
 -- {down = tgp_commands.Ltdr, up = tgp_commands.Ltdr, cockpit_device_id = devices.TGP_INTERFACE, value_down =  1.0, value_up = 0.0, name = _('LTD/R Switch - Toggle ARM/SAFE'), category = {_('CUSTOM - Right Console')}},
-
 -- LST/NFLIR
 {down = tgp_commands.Lst, up = tgp_commands.Lst, cockpit_device_id = devices.TGP_INTERFACE, value_down =  1.0, value_up = 0, name = _('LST/NFLR Switch - Toggle'), category = {_('CUSTOM - Right Console')}},
 -- Hook
