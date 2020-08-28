@@ -3,17 +3,20 @@
 A bunch of files I've created as part of designing and building a home cockpit for the F/A-18C.  Used in DCS playing in VR.
 
 Folders here are:
-* **Arduino Code**: Currently a placeholder, but will hold the files used for the Arduino boards used in the build.
-* **DCS lua Code**: Currently a placeholder, but will uplaod the file I add to "defualt.lua" for the Hornet to allow
+* **Arduino Code**: The code I have written to drive the Arduino boards I use in my build.  Also provides info on which boards
+will work and what libraries are needed.
+* **DCS lua Code**: Holds customizations to the "default.lua" file that defines how cockpit controls work.  With some
+modifications to the .lua code it is possible to make toggle switches send an action when turned OFF in addition to
+when turned ON.  Provides locations for the files and guidance on how to incorporate into DCS.
 * **DXF files**: This has the CAD drawings that I used for the design of the side consoles and front panel, as well as
 drawings used to construct the enclosures.
 * **Pictures**: Images of the project at various stages in it's lifecycle.
-on/off toggles to execute two different actions (e.g. gear up when switched on, down when switched off).
 * **STL files**: For various cockpit knobs and switches to mirror the actual Hornet and make it easier to quickly find
 the right control in VR.
 
+<img src="Pictures/2020-08/IMG_7684.JPG">
 
-## License info
+## License information
 
 Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
