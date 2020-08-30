@@ -13,11 +13,11 @@ right shape make things *much* easier in VR.  I'm not including gcode at this po
 these yourself.  I designed all of these in Fusion360, but I'm not including those files, mostly because Fusion360 is cloud-based, and it's
 a pain to extract them to your machine.
 * [**Arduino Code**](Arduino%20Code) are the programs I have written to drive the Arduino boards I use in my build.  While this is very specific
-to my use cases, if you are new to Arduino coding this may provide some ideas.  [The Rradme](Arduino%20Code/Readme.md) also includes
+to my use cases, if you are new to Arduino coding this may provide some ideas.  [The Readme](Arduino%20Code/Readme.md) also includes
 info about which boards work and a couple of code libraries that are likely to be needed.
 * [**DCS lua code**](DCS%20lua%20code) are my customizations to the "default.lua" file that defines how cockpit controls work.  With some
 modifications to the .lua code it is possible, for example, to make toggle switches send an action when turned OFF in addition to
-when turned ON.  [The readme](DCS%20lua%20code/Readme.md) explains the location of the files within the DCS install and provides guidance
+when turned ON.  [The Readme](DCS%20lua%20code/Readme.md) explains the location of the files within the DCS install and provides guidance
 on how to incorporate into DCS.
 
 <img src="Pictures/2020-08/IMG_7684.JPG">
