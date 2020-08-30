@@ -19,6 +19,8 @@ info about which boards work and a couple of code libraries that are likely to b
 modifications to the .lua code it is possible, for example, to make toggle switches send an action when turned OFF in addition to
 when turned ON.  [The Readme](DCS%20lua%20code/Readme.md) explains the location of the files within the DCS install and provides guidance
 on how to incorporate into DCS.
+* [**Doc**](Doc) is NOT full documentation, but just a collection of files and links that I have collected and created for reference
+along the way.
 
 <img src="Pictures/2020-08/IMG_7684.JPG">
 
