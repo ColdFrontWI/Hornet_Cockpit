@@ -2,7 +2,7 @@
 
 ## Enclosures
 
-The enclosurs were built from MDF and screwed together.  The sides are 1/2" thick and the top/bottom (and back
+The enclosures were built from MDF and screwed together.  The sides are 1/2" thick and the top/bottom (and back
 of the front panel) are 1/4".  CAD files for the design for the framing pieces are located in the [DXF
 Files/Enclosure folder](../../DXF%20Files/Enclosure).
 
@@ -14,21 +14,21 @@ Files/Enclosure folder](../../DXF%20Files/Enclosure).
 ## Panels / Wiring
 
 The panels themselves are [1/8" white acrylic that I picked up from
-Amazon](https://www.amazon.com/gp/product/B06XNXHZZH/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
+Amazon](https://www.amazon.com/gp/product/B06XNXHZZH).
 For the markings, I inkjet printed onto [full sheet
-labels](https://www.amazon.com/gp/product/B074KQRJKN/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
+labels](https://www.amazon.com/gp/product/B074KQRJKN).
 Because the panels are smaller than the labels, I had to trim and fit them together.  The CAD files that
 make up the panel design are located in the [DXF Files folder](../../DXF%20Files/Panel).  One of the key
 features of the panel design are hole center marks to help with drilling and cutting the holes
 necessay for all the buttons/switches/knobs.
 
-For control boards, I used several of the [Leo Bodnar](http://www.leobodnar.com/shop/index.php?main_page=index&cPath=94&zenid=41f0a7f40298148d5ff5bead11e34d14)
-boards including four [BU0836A boards](http://www.leobodnar.com/shop/index.php?main_page=product_info&cPath=94&products_id=204&zenid=fcc1bcaa9d9931558e9c9466170ca3ff)
-combined with [Matrix Breakout boards](http://www.leobodnar.com/shop/index.php?main_page=product_info&cPath=94&products_id=274&zenid=fcc1bcaa9d9931558e9c9466170ca3ff)
-as well as one [BBI-64](http://www.leobodnar.com/shop/index.php?main_page=product_info&cPath=94&products_id=274&zenid=fcc1bcaa9d9931558e9c9466170ca3ff).
+For control boards, I used several of the [Leo Bodnar](http://www.leobodnar.com/shop/index.php?main_page=index&cPath=94)
+boards including four [BU0836A boards](http://www.leobodnar.com/shop/index.php?main_page=product_info&cPath=94&products_id=204)
+combined with [Matrix Breakout boards](http://www.leobodnar.com/shop/index.php?main_page=product_info&cPath=94&products_id=274)
+as well as one [BBI-64](http://www.leobodnar.com/shop/index.php?main_page=product_info&cPath=94&products_id=300).
 
 This design also includes one [Arduino knockoff "Pro Micro"
-board](https://www.amazon.com/gp/product/B07FXCTVQP/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) for the "supplemental"
+board](https://www.amazon.com/gp/product/B07FXCTVQP) for the "supplemental"
 switches at the bottom right of the front panel.  This particular
 board can be set up to behave like a USB HID, so DCS sees it as a game controller.  The Bodnar boards are great, but with
 Arduino I can do things like setting an on-off toggle to send a joystick button press when the switch is either turned
