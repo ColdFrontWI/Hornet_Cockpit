@@ -1,5 +1,13 @@
 # DCS .lua code
 
+Two categories here:
+* The "default\*.lua" files add custom entries in the control setup pages within DCS.  Can use these to make 
+ON-OFF toggles work properly.
+* "CMDS_ALE47.lua" replaces the default countermeasures programs with something I find more helpful.  Replace
+the file found at *~\DCSWorld\Mods\aircraft\FA-18C\Cockpit\Scripts\TEWS\device* with this version.
+
+# Using toggle switches in DCS
+
 Toggle switches present a challenge when building any kind of button box.  While they send an input when you
 turn the toggle "on," they don't provide any kind of signal when you turn the toggle "off."  There are some
 ways around this:
