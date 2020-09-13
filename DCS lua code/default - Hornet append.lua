@@ -14,6 +14,22 @@
 {down = hotas_commands.THROTTLE_EXTERIOR_LIGTHS, up = hotas_commands.THROTTLE_EXTERIOR_LIGTHS, cockpit_device_id = devices.HOTAS, value_down =  1.0, value_up = 0.0, name = _('Exterior Lights Switch - Toggle'), category = {_('CUSTOM - Warthog Throttle')}},
 
 
+-- CODE FOR TOGGLES THAT DO NOT HAVE PROPER ON/OFF SETTINGS
+-- Some toggles only have switches that allow for down/up settings with a toggle
+{down = gear_commands.LaunchBarSw,      cockpit_device_id = devices.GEAR_INTERFACE,    value_down = -1.0, name = _('Launch Bar - Retract'),         category = {_('CUSTOM - Arduino')}},
+{down = gear_commands.LaunchBarSw,      cockpit_device_id = devices.GEAR_INTERFACE,    value_down =  1.0, name = _('Launch Bar - Extend'),          category = {_('CUSTOM - Arduino')}},
+{down = engines_commands.APU_ControlSw,	cockpit_device_id = devices.ENGINES_INTERFACE, value_down =  1.0, name = _('APU Control Switch - ON'),      category = {_('CUSTOM - Arduino')}},
+{down = engines_commands.APU_ControlSw,	cockpit_device_id = devices.ENGINES_INTERFACE, value_down = -1.0, name = _('APU Control Switch - OFF'),     category = {_('CUSTOM - Arduino')}},
+{down = fuel_commands.DumpSw,           cockpit_device_id = devices.FUEL_INTERFACE,    value_down =  1.0, name = _('Fuel Dump Switch - ON'),        category = {_('CUSTOM - Arduino')}},
+{down = fuel_commands.DumpSw,           cockpit_device_id = devices.FUEL_INTERFACE,    value_down =  0.0, name = _('Fuel Dump Switch - OFF'),       category = {_('CUSTOM - Arduino')}},
+{down = ECS_commands.AV_COOL_Sw,        cockpit_device_id = devices.ECS_INTERFACE,     value_down =  1.0, name = _('AV COOL Switch - EMERG'),       category = {_('CUSTOM - Arduino')}},
+{down = ECS_commands.AV_COOL_Sw,        cockpit_device_id = devices.ECS_INTERFACE,     value_down =  0.0, name = _('AV COOL Switch - NORM'),        category = {_('CUSTOM - Arduino')}},
+{down = elec_commands.PitotHeater,      cockpit_device_id = devices.ELEC_INTERFACE,    value_down =  1.0, name = _('Pitot Heater Switch - ON'),     category = {_('CUSTOM - Arduino')}},
+{down = elec_commands.PitotHeater,      cockpit_device_id = devices.ELEC_INTERFACE,    value_down = -1.0, name = _('Pitot Heater Switch - OFF'),    category = {_('CUSTOM - Arduino')}},
+{down = cptlights_commands.HookBypass,  cockpit_device_id = devices.CPT_LIGTHS,        value_down =  1.0, name = _('Hook Bypass Switch - FIELD'),   category = {_('CUSTOM - Arduino')}},
+{down = cptlights_commands.HookBypass,  cockpit_device_id = devices.CPT_LIGTHS,        value_down = -1.0, name = _('Hook Bypass Switch - CARRIER'), category = {_('CUSTOM - Arduino')}},
+
+
 -- LEFT CONSOLE SPECIAL CONTROLS
 -- OBOGS
 {down = oxygen_commands.OBOGS_ControlSw, up = oxygen_commands.OBOGS_ControlSw, cockpit_device_id = devices.OXYGEN_INTERFACE, value_down = 1.0, value_up = 0.0, name = _('OBOGS - Toggle'), category = {_('CUSTOM - Left Console')}},
