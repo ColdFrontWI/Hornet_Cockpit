@@ -8,3 +8,5 @@ that allow me to use parts I had on hand including the pushbutton and rotary.  I
 forums](https://forums.eagle.ru/showpost.php?p=4471487&postcount=58).
 * [**Panel - lower LG.stl**](Panel%20-%20lower%20LG.stl) is something I created as a quick test to see if I
 could 3D print overlays for my panel to give it a bit more depth.
+* When used in conjunction with a push-pull potentiometer, the **"Hand brake"** files create a mechanism
+which mirrors the parking / emergency brake in the Hornet.
