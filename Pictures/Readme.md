@@ -10,5 +10,8 @@ Hornet cockpit mods are attached to.
 This page includes a lot of "behind the scenes" pictures and detail about how each panel was assembled.
 * [**August 2020:**](2020-08/Readme.md) Pictures after modifying it to include the AMPCD, as well as adding
 bunch of custom-designed, 3D-printed knobs and switches.
+* [**September 2020:**](2020-09/Readme.md) A couple of new controls added, a few more 3d printed knobs, and swapping
+out the Bodnar boards on the left and right consoles for Arduinos to allow more inputs.
+
 
 <img src="2020-08/IMG_7684.JPG">
