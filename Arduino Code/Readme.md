@@ -24,7 +24,7 @@ Arduino as a joystick.  You can set it up with up to 11 axes and 128 buttons.
 
 ## My code
 
-There are two programs here:
+There are six  programs here:
 * [**04_Hornet_Supplemental_Controls.ino**](04_Hornet_Supplemental_Controls.ino)
 is what I use for the supplemental buttons I added to my cockpit to make things easier
 to use in DCS in VR (bottom right of the front instrument panel, see picture).  Not part of the real aircraft, but I use it for things like
@@ -41,8 +41,13 @@ in the process of editing this to remove some jitter on the analog inputs.
 
 <img src="../Pictures/2020-08/IMG_7690.JPG" width=50%>
 
+* **Programs 06 - 09** control the left and right consoles.  For each console, I have one board for "switches" and one for "knobs" that
+includes analog potentiometer inputs as well as rotary encoders.  There's a cool bit of code starting at line 245 in [08_Hornet_Left_Panel
+Switches.ino](08_Hornet_Left_Panel_Switches.ino) that takes analog input from a potentiometer and converts it to button presses for the left/right
+rotation of the hand brake.  (The push/pull is part of the regular button matrix.)
+
+
 ## Next steps
 
-I plan to pull out a couple of the Bodnar boards I have and replace with Arduinos.  The Bodnar boards are fantastic, but
-there are some specific things I want to do that need a bit more flexibility and will increase the number of inputs required.
-
+Having replaced the side console Bodnar boards with Arduinos, I'm considering replaceing some of the remaining front-panel controls
+with them, but this seems a very low priority, as functionally things are working quite well.
