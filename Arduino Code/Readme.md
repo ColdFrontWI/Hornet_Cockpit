@@ -49,5 +49,5 @@ rotation of the hand brake.  (The push/pull is part of the regular button matrix
 
 ## Next steps
 
-Having replaced the side console Bodnar boards with Arduinos, I'm considering replaceing some of the remaining front-panel controls
+Having replaced the side console Bodnar boards with Arduinos, I'm considering replacing some of the remaining front-panel controls
 with them, but this seems a very low priority, as functionally things are working quite well.
