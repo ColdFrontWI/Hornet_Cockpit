@@ -26,7 +26,11 @@ selection of the two-way ON-OFF toggles.  But many of the ON-OFF toggles will re
 You should be able to add any of the "default - *Aircraft* append.lua" files in this folder, to the "default.lua"
 file for the relevant plane, and additional options will show up in the DCS control setup.  Just be sure to take
 note of *where* you add the append file.  This is noted in comments of the Hornet version of the file, but I put it
-right after the "join(res.keyCommands,{" line in default.lua.  Once you edit
+right after the
+~~~
+join(res.keyCommands,{
+~~~
+line in default.lua.  Once you edit
 default.lua you will see some additional control groups in the setup page (see picture below).
 You can then bind them to whichever switch you want.  For reference, the Hornet's default.lua file is located at
 *~\DCSWorld\Mods\aircraft\FA-18C\Input\FA-18C\joystick* within the DCS installation.
