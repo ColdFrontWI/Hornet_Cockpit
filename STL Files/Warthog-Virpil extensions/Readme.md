@@ -10,14 +10,14 @@ and difficult to install on my setup, so I created versions where the female thr
 I think my issue with the 36.0mm may be my printer being slightly out of square, but the 36.5 and 37.0
 fit nicely.  You may need to experiment to find out which gives the best fit with your setup.
 
-50mm design side-by-side with a 75mm from Virpil
+### 50mm design side-by-side with a 75mm from Virpil
 
 <img src="Pictures/IMG_7718.JPG" width=50%>
 
-The female threads
+### The female threads
 
 <img src="Pictures/IMG_7721.JPG" width=50%>
 
-Installed between WarBRD base and TM Hornet grip
+### Installed between WarBRD base and TM Hornet grip
 
 <img src="Pictures/IMG_7723.JPG" width=50%>
