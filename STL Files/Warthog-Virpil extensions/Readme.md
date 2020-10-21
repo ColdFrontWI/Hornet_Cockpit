@@ -1,5 +1,7 @@
 # Warthog / Virpil stick extensions
 
+**Update:** I had a couple of these crack at the male threads after some use when printed using typical settings (2 layer side walls, 20% infill).  So I printed one solid (100% infill), and it's been going strong for a while now.
+
 I had a 75mm extension that I was using with my Virpil WarBRD base and Thrustmaster Hornet grip, but I found that
 my setup really needed a 50mm.  I wasn't too keen on spending >$50 (with shipping) and waiting until one was in
 stock from Virpil or another supplier, so I decided to design and 3D print my own.  The 50mm design was well-received
