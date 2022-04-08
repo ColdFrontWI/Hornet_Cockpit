@@ -15,8 +15,8 @@ Joystick_ JS1(
   JOYSTICK_TYPE_JOYSTICK,
   64, // Button count
   0, // Number of hat switches
-  false, // include x axis
-  false, // include y axis
+  true, // include x axis
+  true, // include y axis
   false, // include z axis
   false, // include Rx axis
   false, // include Ry axis
@@ -29,53 +29,53 @@ Joystick_ JS1(
 );
 
 // Set up the parameters of the button matrix
-const int numReads = 8; // These are the "signal" side of the switches with diodes
+const int numReads = 10; // These are the "signal" side of the switches with diodes
 const int numWrites = 6; // These are the "common" side of the switches
-int readPins[numReads] = {2, 3, 4, 5, 6, 7, 8, 9};  // These are the pins that will be set as inputs and be read in each cycle ("Columns")
+int readPins[numReads] = {1, 0, 2, 3, 4, 5, 6, 7, 8, 9};  // These are the pins that will be set as inputs and be read in each cycle ("Columns")
 int writePins[numWrites] = {10, 16, 14, 15, A0, A1}; // These are the pins that will be turned on/off ("Rows")
 int outputButton[numWrites][numReads] = {
-  {49, 50, 51, 44, 45, 46, 47, 48},
-  {39, 40, 41, 42, 43, 28, 34, 32},
-  {37, 55, 35, NB, 29, 54, 27, 31},
-  {22, 24, 26, 16, 18,  9, 11, 13},
-  {52, 53, 21, 19, 14, NB, NB, NB},
-  { 6,  5,  4,  3,  1,  2,  7, NB}
+  { 4,  2,  0, 18, 17, 16, 15, 14, NB, NB},
+  { 6,  5, 29, 30, 13, 12, 11, 10,  9, NB},
+  { 7,  8, 31, 32, 19, 20, 21, 22, 23, NB},
+  {34, 33, 24, 25, 26, 27, 28, 36, 35, NB},
+  {41, 40, 39, 38, 37, 42, 43, 44, 45, 46},
+  {48, 49, 50, 51, 52, 47, 55, 53, 56, NB}
 }; // This specifies the joystick button be output from each matix position.
 
 int outputButtonLift[numWrites][numReads] = {
-  {NB, NB, NB, NB, NB, NB, NB, NB},
-  {NB, NB, NB, NB, NB, NB, 33, 33},
-  {38, NB, 36, NB, 30, NB, NB, 30},
-  {23, 25, 25, 17, 17, 10, 12, 12},
-  {NB, NB, 20, 20, 15, NB, NB, NB},
-  {NB, NB, NB, NB,  0, NB,  8, NB}
+  { 3,  3,  1, NB, NB, NB, NB, NB, NB, NB},
+  {NB, NB, NB, NB, NB, NB, NB, NB, NB, NB},
+  {NB, NB, NB, NB, NB, NB, NB, NB, NB, NB},
+  {NB, NB, NB, NB, NB, NB, NB, NB, NB, NB},
+  {NB, NB, NB, NB, NB, NB, NB, NB, NB, NB},
+  {NB, NB, NB, NB, NB, NB, 54, 54, 57, NB}
 }; // This specifies the joystick button be output from each matix position.
 
 
 
 int newButtonValue[numWrites][numReads] =
 {
-  {0, 0, 0, 0, 0, 0, 0, 0},
-  {0, 0, 0, 0, 0, 0, 0, 0},
-  {0, 0, 0, 0, 0, 0, 0, 0},
-  {0, 0, 0, 0, 0, 0, 0, 0},
-  {0, 0, 0, 0, 0, 0, 0, 0},
-  {0, 0, 0, 0, 0, 0, 0, 0}
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 };
 int oldButtonValue[numWrites][numReads] =
 {
-  {0, 0, 0, 0, 0, 0, 0, 0},
-  {0, 0, 0, 0, 0, 0, 0, 0},
-  {0, 0, 0, 0, 0, 0, 0, 0},
-  {0, 0, 0, 0, 0, 0, 0, 0},
-  {0, 0, 0, 0, 0, 0, 0, 0},
-  {0, 0, 0, 0, 0, 0, 0, 0}
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 };
 
-// int newXValue = 0;
-// int oldXValue = 0;
-// int newYValue = 0;
-// int oldYValue = 0;
+int newXValue = 0;
+int oldXValue = 0;
+int newYValue = 0;
+int oldYValue = 0;
 
 
 // Set up rotary encoders
@@ -88,8 +88,8 @@ int oldButtonValue[numWrites][numReads] =
 */
 
 // Set up the input pins for the axes
-// int xAxisPin = A2;
-// int yAxisPin = A3;
+int xAxisPin = A2;
+int yAxisPin = A3;
 
 void setup() {
   JS1.begin();
@@ -106,8 +106,8 @@ void setup() {
   }
 
   // Set up the analog inputs
-  // pinMode(xAxisPin, INPUT);
-  // pinMode(yAxisPin, INPUT);
+  pinMode(xAxisPin, INPUT);
+  pinMode(yAxisPin, INPUT);
 
   delay(2500);
   // Set all the "old button" values WRONG so it has to set all the values the first time it runs the loop
@@ -156,14 +156,12 @@ void setup() {
 
   // Need special code to check for the off value in three position toggles.
   // First the ATT/AOA switch on the HUD panel
-  // THIS HAS TO BE REWRITTEN
-  /*
   if(oldButtonValue[0][0] == HIGH || oldButtonValue[0][1] == HIGH)
     JS1.setButton(outputButtonLift[0][0], LOW);
   // Then the DISPENSER switch
   if(oldButtonValue[5][6] == HIGH || oldButtonValue[5][7] == HIGH)
     JS1.setButton(outputButtonLift[5][6], LOW);
-  */
+  
 }
 
 void loop() {
@@ -223,7 +221,6 @@ void loop() {
   // Code for analog controls
   // To avoid jitter, only change outputs when the change is > analogMin
   // If within analogMin of the min or max, force the output to the min/max
-  /*
   newXValue = analogRead(xAxisPin);
   if(newXValue >= analogMax - analogStep)
   {
@@ -257,6 +254,5 @@ void loop() {
     JS1.setYAxis(newYValue);
     oldYValue = newYValue;
   }
-  */
 
 }

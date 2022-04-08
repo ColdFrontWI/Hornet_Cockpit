@@ -25,7 +25,7 @@ Arduino as a joystick.  You can set it up with up to 11 axes and 128 buttons.
 ## My code
 
 There are six  programs here:
-* [**04_Hornet_Supplemental_Controls.ino**](04_Hornet_Supplemental_Controls.ino)
+* [**Supplemental_Controls.ino**](Supplemental_Controls.ino)
 is what I use for the supplemental buttons I added to my cockpit to make things easier
 to use in DCS in VR (bottom right of the front instrument panel, see picture).  Not part of the real aircraft, but I use it for things like
 VR recenter, labels on/off, NVG goggles on/gain, and kneeboard management.  This also winds up picking up the slack from a few other places
@@ -33,7 +33,7 @@ where I didn't have ehough inputs.  This program includes code that reads a butt
 
 <img src="../Pictures/2020-08/IMG_7689.JPG" width=50%>
 
-* [**05_Hornet_AMPCD_CMS.ino**](05_Hornet_AMPCD_CMS.ino) was created when I added the
+* [**AMPCD_CMS.ino**](AMPCD_CMS.ino) was created when I added the
 APMCD to my build.  It is used for the bottom half of the HUD controls,
 the APMCD, and the countermeasures panel.  Again, this includes a switch matrix and also has a couple of analog inputs.  With this program,
 I figured out how to send joystick inputs both when a toggle is turned ON as well as when it is turned OFF.  I'm
@@ -41,10 +41,9 @@ in the process of editing this to remove some jitter on the analog inputs.
 
 <img src="../Pictures/2020-08/IMG_7690.JPG" width=50%>
 
-* **Programs 06 - 09** control the left and right consoles.  For each console, I have one board for "switches" and one for "knobs" that
-includes analog potentiometer inputs as well as rotary encoders.  There's a cool bit of code starting at line 245 in [08_Hornet_Left_Panel
-Switches.ino](08_Hornet_Left_Panel_Switches.ino) that takes analog input from a potentiometer and converts it to button presses for the left/right
-rotation of the hand brake.  (The push/pull is part of the regular button matrix.)
+* Remaining programs control the left and right consoles.  For each console, I have one board for "switches" and one for "knobs" that
+includes analog potentiometer inputs as well as rotary encoders.  There's a bit of code starting at line 245 in [Left_Panel_Switches.ino](Left_Panel_Switches.ino) that takes analog input from a potentiometer and converts it to button presses for the left/right
+rotation of the hand brake.  (The push/pull is part of the regular button matrix.)  There is similar code in [Right_Panel_Switches.ino](Right_Panel_Switches.ino) for the wing fold handle.
 
 
 ## Next steps
